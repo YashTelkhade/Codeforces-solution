@@ -1,0 +1,29 @@
+x,y=map(int, input("").split())
+a=""
+b=""
+c="#"
+for i in range(y):
+    a=a+"#"
+for i in range(y-1):
+    b=b+"."
+b=b+"#"
+
+for i in range(y-1):
+    c=c+"."
+    
+l=[a,b,c]
+z=[]
+for i in range(1,x+1):
+    if(i%2!=0):
+        z.append(a)
+    elif(i%4==0):
+        z.append(c)
+    else:
+        z.append(b)
+        
+for i in z:
+    print(i)
+    
+
+
+    
