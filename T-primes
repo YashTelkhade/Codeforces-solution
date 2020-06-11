@@ -1,0 +1,13 @@
+x=int(input(""))
+ar=map(int,input("").split())
+n=1000000
+c=[0,0] + [1]*n
+r=set()
+for i in range(2,n):
+    if c[i]:
+        for j in range(i*i,n,i):
+            c[j]=0
+        r.add(i*i)
+        
+for i in ar:
+    print("YES" if i in r else "NO")
