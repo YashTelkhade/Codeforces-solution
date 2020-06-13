@@ -1,0 +1,14 @@
+x,y=map(int,input("").split())
+y=240-y
+z=int(y*2/5)
+j=0
+while(z>j*(j+1)):
+    j=j+1
+
+if(j>x):
+    print(x)
+elif(z==j*(j+1)):
+    print(j)
+else:
+    print(j-1)
+    
